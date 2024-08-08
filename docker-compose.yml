@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  debezium:
+    image: debezium/connect:2.7
+    environment:
+      BOOTSTRAP_SERVERS: kafka.nexdata.stg:9094
+      GROUP_ID: 1
+      CONFIG_STORAGE_TOPIC: debezium_config
+      OFFSET_STORAGE_TOPIC: debezium_offset
+      STATUS_STORAGE_TOPIC: debezium_status
+    ports:
+      - "8083:8083"
