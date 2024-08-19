@@ -17,10 +17,10 @@ docker compose up -d
 
 ## API
 
-- POST http://localhost:8083/connectors/ start
-- GET http://localhost:8083/connectors/ get all cdc
-- GET http://localhost:8083/connectors/{name}/status get cdc status
-- DELETE http://localhost:8083/connectors/{name} delete cdc
+- POST `http://localhost:8083/connectors/` start
+- GET `http://localhost:8083/connectors/` get all cdc
+- GET `http://localhost:8083/connectors/{name}/status` get cdc status
+- DELETE `http://localhost:8083/connectors/{name}` delete cdc
 
 ## Deploy
 
